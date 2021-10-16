@@ -1,6 +1,6 @@
 body {
 	background: #fff;
-	/* color: #798a9a; */
+    color: #798a9a; 
 	line-height: 1.7;
 	font-size: 16px;
 	font-weight: 300;
@@ -54,7 +54,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color: #4ebe2a;
+	color: #afafaf;
 	text-decoration: none;
 }
 
@@ -353,7 +353,7 @@ a:active {
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
-	background: #4ebe2a;
+	background: #81333d;
 }
 
 .skillName {
