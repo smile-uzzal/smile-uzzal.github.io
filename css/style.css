@@ -348,12 +348,12 @@ a:active {
 	box-shadow: none !important;
 }
 .btn.btn-primary {
-	color: #fff;
+	color: rgb(219, 217, 217);
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
-	background: #81333d;
+	background: #969595;
 }
 
 .skillName {
