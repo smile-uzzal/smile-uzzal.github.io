@@ -1,6 +1,7 @@
 body {
+	background-image: url(images/image_bg1.png); 
 	background: #fff;
-    color: #798a9a; 
+    /* color: #798a9a; */ 
 	line-height: 1.7;
 	font-size: 16px;
 	font-weight: 300;
@@ -178,19 +179,31 @@ a:active {
 .site-navbar.scrolled .navbar-nav > li.active > a {
 	color: #57d131 !important;
 }
-
+.container { 
+	background: rgba( 28, 4, 4, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 .site-hero {
+	padding-bottom: 50px;
 	background-color: #ccc;
+	color: rgb(252, 252, 252);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: relative;
 	overflow: hidden;
+	
+	
 }
 .site-hero,
 .site-hero .row {
 	height: 100vh;
 	min-height: 800px;
+	
 }
 .site-hero:before {
 	content: "";
@@ -200,15 +213,17 @@ a:active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(108, 188, 199, 0);
 }
 .site-hero h1 {
-	font-weight: 200;
+	font-weight: 150;
 	margin-bottom: 20px;
 	display: block;
+	
 }
 .site-hero h1 strong {
-	font-weight: 800;
+	
+	font-weight: 700;
 }
 @media (min-width: 768px) {
 	.site-hero h1 {
@@ -218,19 +233,20 @@ a:active {
 .site-hero h1,
 .site-hero .lead {
 	font-weight: 200;
-	color: #fff;
+	color: rgb(255, 255, 255);
 }
 .site-hero .lead {
 	line-height: 2;
 }
 .site-hero .site-subheading {
-	max-width: 640px;
+	max-width: 800px;
 	margin: 0 auto;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgb(255, 255, 255);
 }
 
 .site-section {
 	padding: 5em 0;
+	background-image: url(images/image_bg1.png);
 }
 
 .section-heading {
@@ -272,7 +288,7 @@ a:active {
 .site-service-item .icon {
 	display: block;
 	margin-bottom: 50px;
-	background: #edf0f2;
+	background: #edf0f200;
 	background: #57d131;
 	width: 100px;
 	height: 100px;
@@ -337,7 +353,7 @@ a:active {
 }
 
 .btn {
-	border-radius: 100px;
+	border-radius: 60px;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 }
@@ -348,13 +364,51 @@ a:active {
 	box-shadow: none !important;
 }
 .btn.btn-primary {
-	color: rgb(219, 217, 217);
+	border-style: none;
+	color: rgb(255, 255, 255);
+	background: rgb(207,199,199);
+    background: linear-gradient(143deg, rgba(207,199,199,0.8015581232492998) 0%, rgba(60,60,60,0.2049194677871149) 100%);
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
-	background: #969595;
+	background: rgb(60,60,60);
+background: linear-gradient(143deg, rgba(60,60,60,0.2049194677871149) 0%, rgba(207,199,199,0.8015581232492998) 100%);
 }
+
+.btn.btn-primary1 {
+	border-style: none;
+	color: rgb(255, 255, 255);
+	background: rgb(48, 184, 218);
+    
+}
+.btn.btn-primary1:hover,
+.btn.btn-primary1:active,
+.btn.btn-primary1:focus {
+	background: rgb(60,60,60);
+background: linear-gradient(143deg, rgba(60,60,60,0.2049194677871149) 0%, rgba(207,199,199,0.8015581232492998) 100%);
+}
+
+.gallery {
+	margin: 30px 30px 30px 30px;
+}
+
+.gallery img {
+	transition: 0.1s;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 300px;
+	height: 300px;
+
+}
+
+.gallery img:hover {
+	filter: grayscale(100%);
+	transform: scale(1.1);
+}
+
 
 .skillName {
 	display: inline;
@@ -609,7 +663,12 @@ a:active {
 
 .resume-item {
 	padding: 40px;
-	background: #fff;
+	background: rgba( 255, 255, 255, 0.75 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 	-webkit-transition: .3s all ease;
 	-o-transition: .3s all ease;
 	transition: .3s all ease;
@@ -688,6 +747,12 @@ a:active {
 }
 
 .site-form .form-control {
+	background: rgba( 255, 255, 255, 0.75 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 	border: 1px solid #b3bdc6;
 }
 
@@ -774,7 +839,8 @@ a:active {
 
 
 .ridea-image {
-  margin: 35.5% auto ;
+  margin: 5% auto ;
+  
 }
 
 
@@ -785,6 +851,7 @@ a:active {
 
 .img-fluid {
   transition: all 0.2s ease-in;
+
 }
 
 .ridea-image:hover {
